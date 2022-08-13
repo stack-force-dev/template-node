@@ -26,9 +26,11 @@
     "@nestjs/platform-express": "^9.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.8.2",
+    "lint-staged": "^13.0.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "simple-pre-commit": "^1.2.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
@@ -69,5 +71,15 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "simple-pre-commit": "npx lint-staged",
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   }
 }

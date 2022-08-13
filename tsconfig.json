@@ -18,7 +18,15 @@
       "@interfaces/*": ["./interfaces/*"]
     },
     "typeRoots": ["./node_modules/@types"],
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    //nest
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "strictNullChecks": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
