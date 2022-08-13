@@ -26,9 +26,6 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-
 # build files
 dist/
 build/
