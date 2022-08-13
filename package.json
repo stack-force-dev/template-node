@@ -1,0 +1,8 @@
+{
+  "name": "tic-tac-toe-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/developers-gang/tic-tac-toe-node.git",
+  "author": "gazzaevtimur@gmail.com",
+  "license": "MIT"
+}
